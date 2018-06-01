@@ -1,3 +1,9 @@
+function query_dataset(start_date, start_time, end_date, end_time)
+{
+    console.log("query_dataset()");
+}
+
+
 function draw_graph(id, json_data) 
 {
 	// Initialize our labels and datasets
@@ -28,7 +34,7 @@ function draw_graph(id, json_data)
 		datasets[1].data.push(tmp['t2']/1000);
 	};
 
-	var ctx = document.getElementById(id).getContext('2d');
+	var ctx = id.get(0).getContext('2d');
 	ctx.canvas.width = 1000;
 	ctx.canvas.height = 500;
 	var cfg = {
