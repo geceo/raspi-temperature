@@ -1,6 +1,29 @@
-function query_dataset(start_date, start_time, end_date, end_time)
+var dataset;
+
+function ajax_callback(id, data) {
+	console.log(data);
+	dataset=data;
+	draw_graph(id, dataset);
+}
+
+function query_dataset(id, start_date, start_time, end_date, end_time)
 {
-    console.log("query_dataset()");
+	// Convert input data to timestamp
+	var result;
+	var d = new Object();
+	console.log("start "+start_date+" "+start_time);
+	console.log("end "+end_date+" "+end_time);
+	d.start = moment(start_date+" "+start_time,"YYYY/MM/DD HH:mm").format("X");
+	d.end   = moment(end_date+" "+end_time,"YYYY/MM/DD HH:mm").format("X");
+
+	r = $.ajax({
+		type: "POST",
+		url: "/get_data",
+		data: JSON.stringify(d),
+		dataType: "json",
+		error: function () {alert('Error while requesting server !'); },
+		}).success(function (data) { ajax_callback(id, data); });
+	return dataset;
 }
 
 
