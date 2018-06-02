@@ -1,6 +1,10 @@
 #!/bin/bash
 
-DB=/home/pi/graph_temperature/temperature_grabber.sqlite3
+if [ -z ${DB} ] ; then
+    echo -e "No database path specified !\nPlease set DB env variable to point to the sqlite file\nThis file must be aside the flask backend"
+    exit 255
+fi
+
 GRAB_DELAY=10
 
 # Create DB if it doesn't exist
