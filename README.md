@@ -1,13 +1,18 @@
+# Dat screenshot
+
+![screenshot](https://raw.githubusercontent.com/geceo/raspi-temperature/master/raspi-temperature-screenshot.png)
+
 # Limitations
 
 **This is a quick and dirty project which only purpose is to get measurement for my personal use. It's probably dirty, full of bugs and vulnerabilities. Feel free to fix !**
 
-Currently:
+Know limitations::
 
 * No launch script
 * Frontend code is harcoded to 2 sensors.
 * Labels of graph hardcoded to t1 and t2.
 * Probably some security hole around the timestamp passed from the webapp to the flask app ...
+* Bug in Chart.js when updating a canvas: just hit F5 and graph button again.
 
 
 # Requirements
