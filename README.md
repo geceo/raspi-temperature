@@ -1,20 +1,20 @@
-==Limitations==
+# Limitations
 **/!\ This is a quick and dirty project which only purpose is to get measurement for my personal use. It's probably dirty, full of bugs and vulnerabilities. Feel free to fix ! /!\**
 
 Currently:
-_ No launch script
-_ Frontend code is harcoded to 2 sensors.
-_ Labels of graph hardcoded to t1 and t2.
-_ Probably some security hole around the timestamp passed from the webapp to the flask app ...
+* No launch script
+* Frontend code is harcoded to 2 sensors.
+* Labels of graph hardcoded to t1 and t2.
+* Probably some security hole around the timestamp passed from the webapp to the flask app ...
 
 
-==Requirements==
+# Requirements
 
 To run this, you need:
-_ python / python-flask / python-sqlite3
-_ Fully configured temperature sensors over Dallas 1-wire bus. This sensors are usually accessed over /sys/bus/w1/devices/28-<device id> 
+* python / python-flask / python-sqlite3
+* Fully configured temperature sensors over Dallas 1-wire bus. This sensors are usually accessed over /sys/bus/w1/devices/28-<device id> 
 
-==Installation==
+# Installation
 
 As previously said it's a quick&dirty project... There's no installation process.
 
