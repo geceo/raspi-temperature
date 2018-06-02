@@ -1,6 +1,6 @@
 # Limitations
 
-**/!\ This is a quick and dirty project which only purpose is to get measurement for my personal use. It's probably dirty, full of bugs and vulnerabilities. Feel free to fix ! /!\**
+**This is a quick and dirty project which only purpose is to get measurement for my personal use. It's probably dirty, full of bugs and vulnerabilities. Feel free to fix !**
 
 Currently:
 
@@ -22,9 +22,9 @@ As previously said it's a quick&dirty project... There's no installation process
 
 Simply:
 
-1. git clone http://github.com/geceo/raspi-temperature.git <your install dir>
-2. cd <your install dir>
+1. git clone http://github.com/geceo/raspi-temperature.git __your install dir__
+2. cd __your install dir__
 3. (optionnal step) Launch _screen_ utils so that the daemon isn't killed if you disconnect.
-4. export DB=<your install dir>/web/temperature_grabber.sqlite3
+4. export DB=__your install dir__/web/temperature_grabber.sqlite3
 5. Launch the database feeder: ./daemon/pi-temperature-daemon.sh
 6. Launch the Flas backend: FLASK_APP=pi-temperature-flaskapp.py python -m flask run --ip 0.0.0.0 --port:8000
