@@ -1,7 +1,9 @@
-# Limitations
+# Limitations
+
 **/!\ This is a quick and dirty project which only purpose is to get measurement for my personal use. It's probably dirty, full of bugs and vulnerabilities. Feel free to fix ! /!\**
 
 Currently:
+
 * No launch script
 * Frontend code is harcoded to 2 sensors.
 * Labels of graph hardcoded to t1 and t2.
@@ -14,7 +16,7 @@ To run this, you need:
 * python / python-flask / python-sqlite3
 * Fully configured temperature sensors over Dallas 1-wire bus. This sensors are usually accessed over /sys/bus/w1/devices/28-<device id> 
 
-# Installation
+# Installation
 
 As previously said it's a quick&dirty project... There's no installation process.
 
